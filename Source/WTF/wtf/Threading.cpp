@@ -507,7 +507,7 @@ void initialize()
         initializeLibraryPathDiagnostics();
 #endif
 #if OS(WINDOWS)
-        RunLoop::registerRunLoopMessageWindowClass();
+        // RunLoop::registerRunLoopMessageWindowClass();
 #endif
     });
 }

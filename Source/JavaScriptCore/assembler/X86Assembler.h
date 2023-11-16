@@ -6399,7 +6399,8 @@ public:
 
     static void replaceWithNops(void* instructionStart, size_t memoryToFillWithNopsInBytes)
     {
-        fillNops<memcpyWrapper>(instructionStart, memoryToFillWithNopsInBytes);
+        // fillNops<memcpyWrapper>(instructionStart, memoryToFillWithNopsInBytes);
+        fillNops<memcpy>(instructionStart, memoryToFillWithNopsInBytes);
     }
 
     static ptrdiff_t maxJumpReplacementSize()
